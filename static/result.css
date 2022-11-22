@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(46, 44, 46);
+}
+
+td {
+    border: 2px solid block;
+    margin: 5px;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
+tr {
+    background-color: #FFC23C;
+}
+
+.tab {
+    background-color: #C47AFF;
+}
+
+th {
+    border: 2px solid rgb(0, 0, 9);
+    color: azure;
+    margin: 5px;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+    color:#fff
+}

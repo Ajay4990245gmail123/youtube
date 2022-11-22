@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+    <link href="static/result.css" rel="stylesheet">
+</head>
+
+<body>
+<!--heading-->
+    <h1>RESULTS</h1>
+    <div>
+<!--        create table-->
+        <table>
+            <tr>
+<!--                table headings-->
+                <th>videoTitle</th>
+                <th>videoViews</th>
+                <th>VideoDescription</th>
+                <th>ChanelName</th>
+                <th> UploadDate</th>
+                <th> videoUrl</th>
+                <th>Subscribers</th>
+                <th>videoLikes</th>
+            </tr>
+<!--            using for loop and jinja method-->
+            {%for review in reviews%}
+            <tr class="tab">
+<!--                table data-->
+                <td>
+                    {{review['title']}}
+                </td>
+                <td>
+                    {{review['views']}}
+                </td>
+                <td>
+                    {{review['discription']}}
+                </td>
+                <td>
+                    {{review['name']}}
+                </td>
+                <td>
+                    {{review['UploadDate']}}
+                </td>
+                <td>
+                    {{review['url']}}
+                </td>
+              <td>
+                    {{review['subscribers']}}
+                </td>
+                <td>
+                    {{review['likes']}}
+                </td>
+            </tr>
+<!--            ending for loop-->
+            {% endfor %}
+        </table>
+    </div>
+</body>
+
+</html>
+
+</body>
+</html>
